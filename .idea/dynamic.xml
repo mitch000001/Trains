@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DynamicElementsStorage">
+    <option name="containingClasses">
+      <map>
+        <entry key="java.lang.Object">
+          <value>
+            <DClassElement>
+              <option name="name" value="java.lang.Object" />
+              <option name="myName" value="java.lang.Object" />
+              <option name="myProperties">
+                <set>
+                  <DPropertyElement>
+                    <option name="name" value="name" />
+                    <option name="type" value="java.lang.String" />
+                    <option name="myType" value="java.lang.String" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="name" />
+                  </DPropertyElement>
+                </set>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+        <entry key="trains.Route">
+          <value>
+            <DClassElement>
+              <option name="name" value="trains.Route" />
+              <option name="myName" value="trains.Route" />
+              <option name="myProperties">
+                <set>
+                  <DPropertyElement>
+                    <option name="name" value="$distance" />
+                    <option name="type" value="java.lang.Object" />
+                    <option name="myType" value="java.lang.Object" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="$distance" />
+                  </DPropertyElement>
+                  <DPropertyElement>
+                    <option name="name" value="$endCity" />
+                    <option name="type" value="java.lang.Object" />
+                    <option name="myType" value="java.lang.Object" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="$endCity" />
+                  </DPropertyElement>
+                  <DPropertyElement>
+                    <option name="name" value="$startCity" />
+                    <option name="type" value="java.lang.Object" />
+                    <option name="myType" value="java.lang.Object" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="$startCity" />
+                  </DPropertyElement>
+                </set>
+              </option>
+              <option name="myMethods">
+                <set>
+                  <DMethodElement>
+                    <option name="name" value="save" />
+                    <option name="type" value="java.lang.Object" />
+                    <option name="myType" value="java.lang.Object" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="save" />
+                  </DMethodElement>
+                </set>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+
