@@ -9,7 +9,7 @@ class Trip {
     static constraints = {
         name()
         distance()
-        routes()
+        routes(nullable:false)
         stops()
     }
     String toString() {name}

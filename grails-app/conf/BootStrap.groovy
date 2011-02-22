@@ -1,45 +1,60 @@
 import trains.Route
 import trains.Trip
+import trains.City
 
 class BootStrap {
 
     def init = { servletContext ->
-        def r1 = new Route(name: 'AB5',
-                           startCity: 'A',
-                           endCity: 'B',
-                           distance: 5).save()
-        def r2 = new Route(name: 'BC4',
-                           startCity: 'B',
-                           endCity: 'C',
-                           distance: 4).save()
-        def r3 = new Route(name: 'CD8',
-                           startCity: 'C',
-                           endCity: 'D',
-                           distance: 8).save()
-        def r4 = new Route(name: 'DC8',
-                           startCity: 'D',
-                           endCity: 'C',
-                           distance: 8).save()
-        def r5 = new Route(name: 'DE6',
-                           startCity: 'D',
-                           endCity: 'E',
-                           distance: 6).save()
-        def r6 = new Route(name: 'AD5',
-                           startCity: 'A',
-                           endCity: 'D',
-                           distance: 5).save()
-        def r7 = new Route(name: 'CE2',
-                           startCity: 'C',
-                           endCity: 'E',
-                           distance: 2).save()
-        def r8 = new Route(name: 'EB3',
-                           startCity: 'E',
-                           endCity: 'B',
-                           distance: 3).save()
-        def r9 = new Route(name: 'AE7',
-                           startCity: 'A',
-                           endCity: 'E',
-                           distance: 7).save()
+        def c1 = new City(shortCode: 'A').save()
+        def c2 = new City(shortCode: 'B').save()
+        def c3 = new City(shortCode: 'C').save()
+        def c4 = new City(shortCode: 'D').save()
+        def c5 = new City(shortCode: 'E').save()
+        new Route(name: 'AB5',
+                  startCity: c1,
+                  endCity: c2,
+                  distance: 5).save()
+        new Route(name: 'BC4',
+                  startCity: c2,
+                  endCity: c3,
+                  distance: 4).save()
+        new Route(name: 'CD8',
+                  startCity: c3,
+                  endCity: c4,
+                  distance: 8).save()
+        new Route(name: 'DC8',
+                  startCity: c4,
+                  endCity: c3,
+                  distance: 8).save()
+        new Route(name: 'DE6',
+                  startCity: c4,
+                  endCity: c5,
+                  distance: 6).save()
+        new Route(name: 'AD5',
+                  startCity: c1,
+                  endCity: c4,
+                  distance: 5).save()
+        new Route(name: 'CE2',
+                  startCity: c3,
+                  endCity: c5,
+                  distance: 2).save()
+        new Route(name: 'EB3',
+                  startCity: c5,
+                  endCity: c2,
+                  distance: 3).save()
+        new Route(name: 'AE7',
+                  startCity: c1,
+                  endCity: c5,
+                  distance: 7).save()
+        def r1 = Route.findByName('AB5')
+        def r2 = Route.findByName('BC4')
+        def r3 = Route.findByName('CD8')
+        def r4 = Route.findByName('DC8')
+        def r5 = Route.findByName('DE6')
+        def r6 = Route.findByName('AD5')
+        def r7 = Route.findByName('CE2')
+        def r8 = Route.findByName('EB3')
+        def r9 = Route.findByName('AE7')
         def t1 = new Trip(name: 'A-B-C',
                           distance: 9)
         def t2 = new Trip(name: 'A-D',

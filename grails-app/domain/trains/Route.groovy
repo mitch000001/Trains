@@ -2,11 +2,9 @@ package trains
 
 class Route {
     String name
-    String startCity
-    String endCity
+    City startCity
+    City endCity
     int distance
-
-    static belongsTo = Trip
 
     static constraints = {
         name()
@@ -14,5 +12,6 @@ class Route {
         endCity()
         distance()
     }
+
     String toString() {startCity+endCity+distance}
 }
